@@ -1,9 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 html {
     font-family: monospace;
+    font-size: 1.2rem;
+}
+ul {
+    list-style: none;
+}
+h3 {
+    border-bottom: solid black 2px;
+    margin-bottom: .5em;
+    font-size: 1.9em;
+}
+li {
+    font-size: .9em;
+}
+li:nth-child(even) {
+    background-color: lightgray;
+    padding: .2em;
+}
+header, main {
+    position: sticky;
+}
+main {
+    padding:  0 0 1em 0;
+}
+main > h2 {
+    background-color: #5252eb;
+    color: white;
+    padding: 1em;
+}
+header {
+    padding:  1em 1em 1em 0; 
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+}
+header > h1 {
+    color: rgb(0,250,0);
+    text-shadow: 2px 2px 2px black;
+    font-size: 4em;
 }
 section {
     display: flex;
-    flex-wrap: wrap;
 }
 section > div {
     flex: 1;
